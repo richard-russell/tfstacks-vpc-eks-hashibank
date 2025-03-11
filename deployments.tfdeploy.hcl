@@ -25,7 +25,7 @@ deployment "development" {
     tfc_kubernetes_audience = "k8s.workload.identity"
     tfc_hostname = "https://app.terraform.io"
     tfc_organization_name = "richard-russell-org"
-    eks_clusteradmin_arn = "arn:aws:iam::363715248670:role/tfc-workload-identity-richard-russell-org"
+    eks_clusteradmin_arn = "arn:aws:iam::363715248670:role/aws_richard.russell_test-developer"
     eks_clusteradmin_username = "aws_richard.russell_test-developer"
 
     #K8S
@@ -51,7 +51,7 @@ deployment "prod" {
     tfc_kubernetes_audience = "k8s.workload.identity"
     tfc_hostname = "https://app.terraform.io"
     tfc_organization_name = "richard-russell-org"
-    eks_clusteradmin_arn = "arn:aws:iam::363715248670:role/tfc-workload-identity-richard-russell-org"
+    eks_clusteradmin_arn = "arn:aws:iam::363715248670:role/aws_richard.russell_test-developer"
     eks_clusteradmin_username = "aws_richard.russell_test-developer"
 
     #K8S
