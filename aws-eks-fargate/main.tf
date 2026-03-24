@@ -61,7 +61,10 @@ module "eks" {
   }
  
 
-  enable_cluster_creator_admin_permissions = true
+  # We manage admin access explicitly via `access_entries` below.
+  # Keeping this disabled avoids creating a duplicate access entry for
+  # the same IAM principal (which causes EKS CreateAccessEntry 409).
+  enable_cluster_creator_admin_permissions = false
 
   access_entries = {
       # One access entry with a policy associated
